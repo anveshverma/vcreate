@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    .topnav {
+      overflow: hidden;
+      background-color: #e9e9e9;
+    }
+
+    .logo {
+      float: left;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #2196F3;
+      color: white;
+    }
+
+    .topnav .login-container {
+      float: right;
+    }
+
+    .topnav input[type=text] {
+      padding: 6px;
+      margin-top: 8px;
+      font-size: 17px;
+      border: none;
+      width: 150px;
+    }
+
+    .topnav .login-container button {
+      float: right;
+      padding: 6px 10px;
+      margin-top: 8px;
+      margin-right: 10px;
+      background-color: #555;
+      color: white;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .topnav .login-container button:hover {
+      background-color: green;
+    }
+
+    @media screen and (max-width: 600px) {
+      .topnav .login-container {
+        float: none;
+      }
+
+      .topnav a,
+      .topnav input[type=text],
+      .topnav .login-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+      }
+
+      .topnav input[type=text] {
+        border: 1px solid #ccc;
+      }
+    }
+
+    .container {
+      position: relative;
+    }
+
+    .container img {
+      width: 100%;
+      height: auto;
+      opacity: 0.3;
+    }
+
+    /* Button used to open the contact form - fixed at the bottom of the page */
+    .open-button {
+      background-color: #b83b5e;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      position: fixed;
+      bottom: 33px;
+      right: 38px;
+      width: 360px;
+    }
+
+    /* The popup form - hidden by default */
+    .form-popup {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      right: 15px;
+      border: 3px solid #f1f1f1;
+      z-index: 9;
+    }
+
+    /* Add styles to the form container */
+    .form-container {
+      max-width: 400px;
+      padding: 20px;
+      background-color: white;
+    }
+
+    /* Full-width input fields */
+    .form-container input[type=text],
+    .form-container input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: #f1f1f1;
+    }
+
+    /* When the inputs get focus, do something */
+    .form-container input[type=text]:focus,
+    .form-container input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+    /* Set a style for the submit/login button */
+    .form-container .btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom: 10px;
+      opacity: 0.8;
+    }
+
+    /* Add a red background color to the cancel button */
+    .form-container .cancel {
+      background-color: red;
+    }
+
+    /* Add some hover effects to buttons */
+    .form-container .btn:hover,
+    .open-button:hover {
+      opacity: 1;
+    }
+
+    .form-container {
+      opacity: 0.9;
+      background-color: white;
+    }
+
+    .may {
+      overflow: hidden;
+      background-color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+  <div class="topnav">
+    <div class="logo">
+      <img src="images/vcreate_logo.png" alt="Cinque Terre" width="150" height="44">
+    </div>
+    <a class="active" href="index.html"><b>Home</b></a>
+    <a href="about.html"><b>About</b></a>
+    <a href="comp.html"><b>Contest</b></a>
+    <a href="community.html"><b>Community</b></a>
+    </div>
+<div class="may">
+
+
+    <link rel="stylesheet" media="all" href="https://assets.eyeka.com/assets/application-a6e500957edf81c836f93d2493a2038b.css" />
+    <meta href='/manifest.json' rel='manifest'>
+    <link href='//fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=latin,latin-ext,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Poppins:400,700&amp;subset=latin-ext' rel='stylesheet' type='text/css'>
+
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <title ng-non-bindable>
+      Summary | Hellmann’s Solutions for Chefs – Inspire Chefs with exciting and easy to use Hellmann’s dressings and sauces -
+      eÿeka
+    </title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://assets.eyeka.com/assets/eyeka/picto-B-circle-small-ab444f8bdcafcd5a6f84531c0222c2b2.png" />
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token" content="oGvhRlX7ScXuo/XxpJ8qPmOnTKduPLjhSUxxqLSUONtJ1rfGzv9zABgYu6DI5gzQTCqyvSj+32Ipbj0911xoPw==" />
+    <link href='https://assets.eyeka.com/assets/eyeka/picto-B-circle-small-144x144-5d07286fef7d8479ba993c4ea02c7314.png' rel='apple-touch-icon-precomposed' sizes='144x144'>
+    <link href='https://assets.eyeka.com/assets/eyeka/picto-B-circle-small-120x120-f6c42f7e390b4ec559aee82f3429f45e.png' rel='apple-touch-icon-precomposed' sizes='120x120'>
+    <link href='https://assets.eyeka.com/assets/eyeka/picto-B-circle-small-144x144-5d07286fef7d8479ba993c4ea02c7314.png' rel='apple-touch-icon-precomposed' sizes='114x114'>
+    <link href='https://assets.eyeka.com/assets/eyeka/picto-B-circle-small-72x72-da1a56f270407d8c27933a9afcd2e656.png' rel='apple-touch-icon-precomposed' sizes='72x72'>
+    <link href='https://assets.eyeka.com/assets/eyeka/picto-B-circle-small-144x144-5d07286fef7d8479ba993c4ea02c7314.png' rel='apple-touch-icon-precomposed'>
+    <link href='/opensearch.xml' rel='search' title='eÿeka' type='application/opensearchdescription+xml'>
+    <meta content='Help Chefs deliver amazing experiences in their restaurant with inspiring and easy to use solutions provided by Hellmann’s. €2,250. Illustration and Creative Writing.' name='description'>
+    <meta content='https://s3-ie.eyeka.com/ASSETS/700x490/5a804d32b3504cb39cf9ac0e30653962.jpg' property='og:image'>
+    <meta content='eÿeka' property='og:site_name'>
+    <meta content='on' http-equiv='cleartype'>
+    <meta content='eÿeka' name='application-name'>
+    <meta content='/browserconfig' name='msapplication-config'>
+    <link rel="alternate" type="application/atom+xml" title="All Contests" href="/contests.atom" />
+    <!--[lt IE 9]>
+<script>
+  document.createElement('video');
+  document.createElement('audio');
+</script>
+<![endif]-->
+    <link rel="stylesheet" media="screen" href="https://en.eyeka.com/contests/12172-hellmann-s-solutions-for-chefs.css" />
+    <meta content='Hellmann’s Solutions for Chefs - Inspire Chefs with exciting and easy to use Hellmann’s dressings and sauces  - eÿeka' property='og:title'>
+    <meta content='Help Chefs deliver amazing experiences in their restaurant with inspiring and easy to use solutions provided by Hellmann’s. - Illustration, Creative Writing - Contest Ended - €2,250' property='og:description'>
+    <meta content='auto' property='og:determiner'>
+    <meta content='https://en.eyeka.com/contests/12172-hellmann-s-solutions-for-chefs' property='og:url'>
+    <link href='https://en.eyeka.com/contests/12172-hellmann-s-solutions-for-chefs/summary' rel='canonical'>
+
+
+
+
+
+      <div id='wrapper'>
+        <div id='applicationcontainer'>
+          <div class='container-fluid' id='maincontainer'>
+            <div class='row-fluid'>
+
+
+
+              <!-- CFE Cover -->
+              <div class='hero hidden-print'>
+                <div class='gradient'>
+                  <div class='inner'>
+                    <h1>
+                      <span>
+                        Hellmann’s Solutions for Chefs
+                        <span class='distance js-timeLeft'>Contest Ended</span>
+                      </span>
+                      <br>
+                      <span class='reminder-banner highlight'
+                        data-content='&lt;i class=&quot;icon-remove&quot;&gt;&lt;/i&gt;Your idea is all that matters!&lt;div&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://support.en.eyeka.com/knowledgebase/articles/518616-what-is-eyeka-express&quot;&gt;Learn more&lt;/a&gt;&lt;/div&gt;'
+                        data-placement='top' data-toggle='popover'>
+                        Express
+                      </span>
+
+                    </h1>
+                  </div>
+                </div>
+              </div>
+              <!-- CFE Navigation -->
+
+
+
+              <!-- CFE CONTENT -->
+              <div class='container-fluid' id='innercontainer'>
+                <div id='summary'>
+                  <!-- brief content -->
+                  <span content='https://s3-ie.eyeka.com/JPG/400/89a482278be546b5860f5c950d5d1985.jpg'>
+                    <div class='inner'>
+                      <h2 class='text-center'>Inspire Chefs with exciting and easy to use Hellmann’s dressings and sauces </h2>
+                      <div class='row-fluid'>
+                        <div class='span8 contest-highlights'>
+                          <div class='contest-prize'>
+                            <div class='inner'>
+                              INR 25,000<span class="local-currency" data-number="2500" prefix="approx. "></span>
+                            </div>
+                          </div>
+                          <div class='contest-prize-ab hidden'>
+                            <div class='prize-group clearfix' id='jurys_prize'>
+                              <h4>
+                                Jury&#39;s Prize
+                              </h4>
+                              <ul class='clearfix prize-list'>
+                                <li class='prize'>
+                                  <span class='prize-label'>Need for versatile solutions (<strong>&euro;750<span class="local-currency" data-number="750" prefix="approx. "></span></strong>)</span>
+                                </li>
+                                <li class='prize'>
+                                  <span class='prize-label'>Need for plant-based solutions (<strong>&euro;750<span class="local-currency" data-number="750" prefix="approx. "></span></strong>)</span>
+                                </li>
+                                <li class='prize'>
+                                  <span class='prize-label'>Need for restaurant quality at home (<strong>&euro;750<span class="local-currency" data-number="750" prefix="approx. "></span></strong>)</span>
+                                </li>
+
+                              </ul>
+                            </div>
+                          </div>
+                          <div class='contest-timing'>
+                            <div class='inner'>
+                              <span content='2020-07-09T11:00:00Z'>
+                                <span content='2020-07-26T23:59:00Z'>
+                                  Contest ended on July 26, 2020
+                                </span>
+                            </div>
+                          </div>
+                          <div class='content-format-ab hidden'>
+                            <p>Present your idea with a good quality illustration and text description, so that we understand what it is and how it could work and how chefs would use it.</p>
+                            <p>Please state which of the three spaces that your idea sits within and the tension it addresses.</p>
+                          </div>
+                          <div class='content-short-desc-ab hidden'>
+                            Presentation
+                          </div>
+                          <div class='contest-medium'>
+                            <div class='inner'>
+                              Illustration - Creative Writing
+                            </div>
+                          </div>
+                        </div>
+                        <div class='span15 offset1'>
+                          <div class='editorial-content'>
+                            <p>Being a chef is rewarding but also very demanding. Beyond the great meals we eat at restaurants, there are hours spent on sourcing the right products, developing an exciting menu, catering to customers changing palates,
+                              and designing an efficient process in the kitchen.</p>
+                            <p>These challenges are further intensified in a post Covid world, and there are three specific tensions and spaces that we have identified as opening up opportunity for innovation in dressings and sauces (further details
+                              on this below).</p>
+                            <p>Hellmann’s is the world’s number 1 mayonnaise amongst consumers and a chef’s favourite. Trusted by chefs, it makes the perfect complement to all types of food, commonly used as an ingredient, filling, topping or
+                              accompaniment to enhance a variety of meals and dishes such as sandwiches, burgers and salads.</p>
+                            <p>Hellmann’s wants to support chefs by offering them new solutions that make their life easier (by resolving the 3 tensions identified) and helping them to create great tasting dishes. <strong>We need your creativity to
+                                imagine ideas that can help chefs while leveraging on the unmistakable taste that Hellmann’s brings.</strong></p>
+
+                          <div class='editorial-content-ab hidden'>
+                            Help Chefs deliver amazing experiences in their restaurant with inspiring and easy to use solutions provided by Hellmann’s.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      </script>
+    </body>
+
+</html>
